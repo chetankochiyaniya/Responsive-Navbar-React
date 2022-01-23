@@ -6,6 +6,8 @@ import {
   FaYoutubeSquare,
 } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
+
 
 
 const Navbar = () => {
@@ -27,16 +29,16 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-              <a href="#" >Home</a>
+              <NavLink to='/'>Home</NavLink>
             </li>
             <li>
-              <a href="#" >about</a>
+              <NavLink to='/about'>about</NavLink>
             </li>
             <li>
-              <a href="#" >services</a>
+              <NavLink to='service'>service</NavLink>
             </li>
             <li>
-              <a href="#" >contact</a>
+              <NavLink to='/contact'>contact</NavLink>
             </li>
           </ul>
         </div>
@@ -70,10 +72,10 @@ const Navbar = () => {
       </nav>
 
       
-       <section className="hero-section">
+      {/* <section className="hero-section">
         <p>Welcome to </p>
         <h1>Code4U</h1>
-      </section> 
+      </section> */}
     </>
   );
 };
